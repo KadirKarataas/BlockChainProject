@@ -1,0 +1,190 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "rideId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "rider",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "driver",
+						"type": "address"
+					}
+				],
+				"name": "NewRide",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_rideId",
+						"type": "uint256"
+					}
+				],
+				"name": "acceptRide",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_rideId",
+						"type": "uint256"
+					}
+				],
+				"name": "cancelRide",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_driver",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_distance",
+						"type": "uint256"
+					}
+				],
+				"name": "requestRide",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_rideId",
+						"type": "uint256"
+					}
+				],
+				"name": "rideCompleted",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rideId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "rides",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "rider",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "driver",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "distance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cashBack",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isCompleted",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"RideShare.sol": "Rideshare"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"RideShare.sol": {
+			"keccak256": "0xc270926906d764786657919f5b3ce927095ab6398c29463027785c55e306a304",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fa3ed41f5e9cb58b3378b4ca3656ed88e6c0243c264f797cece4e6bfd41d80ca",
+				"dweb:/ipfs/QmT4LN8FBAKzxJo4xEQeaeqW9xgTtpreygNXiKi5GiEGHG"
+			]
+		}
+	},
+	"version": 1
+}
